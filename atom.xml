@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://freak-guy.github.io/Telescopium/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://freak-guy.github.io/Telescopium/"/>
   <updated>2025-01-07T02:54:12.050Z</updated>
-  <id>http://example.com/</id>
+  <id>https://freak-guy.github.io/Telescopium/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2025/01/07/hello-world/"/>
-    <id>http://example.com/2025/01/07/hello-world/</id>
+    <link href="https://freak-guy.github.io/Telescopium/2025/01/07/hello-world/"/>
+    <id>https://freak-guy.github.io/Telescopium/2025/01/07/hello-world/</id>
     <published>2025-01-07T02:54:12.050Z</published>
     <updated>2025-01-07T02:54:12.050Z</updated>
     
