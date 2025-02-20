@@ -268,6 +268,26 @@ var a = new Donate({
     
     </div>
   </aside>
+
+
+<!-- 评论区 -->
+<div id="vcomments"></div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script>
+
+<script>
+  // 初始化 Valine 评论系统
+  new Valine({
+    el: '#vcomments',  // 评论容器，绑定到 #vcomments
+    appId: 'QibFHXI6BdndHkJWcfLpHotw-MdYXbMMI',  // 替换为你的 LeanCloud App ID
+    appKey: 'hmTlfsQ6i8WoY0BFdy1bMYcG',  // 替换为你的 LeanCloud App Key
+    placeholder: '只是在发呆，才没有等你评论呢～',  // 自定义评论框提示文本
+    pageSize: 10,  // 每页显示的评论数
+    visitor: true,  // 启用访客评论
+    avatar: 'mp',  // 用户头像类型，选择合适的头像类型
+    path: window.location.pathname  // 使用页面的 URL 作为评论唯一标识，确保每篇文章有独立评论
+  });
+</script>
 </section>
         
       </div>
@@ -288,38 +308,20 @@ var a = new Donate({
         Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
       </div>
   </div>
-
-  <!-- 评论系统容器 -->
-  <div id="vcomments"></div>
-
 </footer>
 
+
 <!-- min height -->
+
 <script>
     var contentdiv = document.getElementById("content");
+
     contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
 </script>
 
 <!-- Custome JS -->
 
 <script src="/Telescopium/js/my.js"></script>
-
-
-<!-- 引入 Valine 评论系统 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script>
-
-<script>
-  // 初始化 Valine 评论系统
-  new Valine({
-    el: '#vcomments',  // 评论框容器
-    appId: 'QibFHXI6BdndHkJWcfLpHotw-MdYXbMMI',  // 替换为你的 LeanCloud App ID
-    appKey: 'hmTlfsQ6i8WoY0BFdy1bMYcG',  // 替换为你的 LeanCloud App Key
-    placeholder: '只是在发呆，才没有等你评论呢～',  // 自定义评论框提示文本
-    pageSize: 10,  // 每页显示的评论数
-    visitor: true,  // 统计独立访客评论
-    avatar: 'mp'  // 用户头像类型（可选: mp, monsterid, retro等）
-  });
-</script>
 
     </div>
     <!-- <nav id="mobile-nav">
