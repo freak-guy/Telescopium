@@ -637,20 +637,38 @@ var themeMenus = {};
         Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
       </div>
   </div>
+
+  <!-- 评论系统容器 -->
+  <div id="vcomments"></div>
+
 </footer>
 
-
 <!-- min height -->
-
 <script>
     var contentdiv = document.getElementById("content");
-
     contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
 </script>
 
 <!-- Custome JS -->
 
 <script src="/Telescopium/js/my.js"></script>
+
+
+<!-- 引入 Valine 评论系统 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script>
+
+<script>
+  // 初始化 Valine 评论系统
+  new Valine({
+    el: '#vcomments',  // 评论框容器
+    appId: 'QibFHXI6BdndHkJWcfLpHotw-MdYXbMMI',  // 替换为你的 LeanCloud App ID
+    appKey: 'hmTlfsQ6i8WoY0BFdy1bMYcG',  // 替换为你的 LeanCloud App Key
+    placeholder: '只是在发呆，才没有等你评论呢～',  // 自定义评论框提示文本
+    pageSize: 10,  // 每页显示的评论数
+    visitor: true,  // 统计独立访客评论
+    avatar: 'mp'  // 用户头像类型（可选: mp, monsterid, retro等）
+  });
+</script>
 
     </div>
     <!-- <nav id="mobile-nav">
