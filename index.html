@@ -619,6 +619,24 @@ var themeMenus = {};
   
 </aside>
         
+
+        <!-- 这里添加评论区 -->
+        <div id="vcomments"></div>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script>
+        <script>
+          new Valine({
+            el: '#vcomments',  // 评论容器
+            appId: 'QibFHXI6BdndHkJWcfLpHotw-MdYXbMMI',  // 替换为你的 LeanCloud App ID
+            appKey: 'hmTlfsQ6i8WoY0BFdy1bMYcG',  // 替换为你的 LeanCloud App Key
+            placeholder: '只是在发呆，才没有等你评论呢～',  // 自定义评论框提示文本
+            pageSize: 10,  // 每页显示的评论数
+            visitor: true,  // 启用访客评论
+            avatar: 'mp',  // 用户头像类型
+            path: window.location.pathname  // 使用页面的 URL 作为评论唯一标识
+          });
+        </script>
+
       </div>
       <footer id="footer" class="site-footer">
   
@@ -745,3 +763,4 @@ var themeMenus = {};
   <script type="text/javascript" src="/js/totop.js" async=""></script>
 </body>
 </html>
+
