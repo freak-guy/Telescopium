@@ -980,6 +980,18 @@ a.article-title:hover {
 .nav-child {
   margin-left: 1em;
 }
+.article-comment-box {
+  position: relative;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .article-comment-box {
+    position: sticky;
+    top: 100px;
+    right: 20px;
+    z-index: 10;
+  }
+}
 #comments {
   padding: 20px;
   margin: 50px 0;
@@ -1767,6 +1779,7 @@ pre .xml .cdata {
   margin-right: 5px;
   display: inline-block;
 }
+.post-toc,
 #toc {
-  display: none;
+  display: none !important;
 }
