@@ -1779,7 +1779,3 @@ pre .xml .cdata {
   margin-right: 5px;
   display: inline-block;
 }
-.post-toc,
-#toc {
-  display: none !important;
-}
